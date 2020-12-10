@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/diabetes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ 
+  border-radius: 14px;
+  padding: 20px;
+  width: 70%;
+}
+.display {
+    width: 80%;
+    height: 200%;
+    padding: 40px 0;
+    background: #FF0509;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  .buttons {
+    padding: 20px 20px 0 20px;
+ 
+}
+.row {
+    width: 200px;}
+
+    input[type=button] {
+        width: 270px;
+        height: 69px;
+        padding: 0;
+      margin:0 3rem;
+          align-self: center;
+        margin-top: 40px;
+        box-sizing: border-box;
+        background: #f85e5ee7;
+        border: none;
+        font-size: 30px;
+        line-height: 30px;
+       border-radius: 24px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;}
+
+        input[type=cal] {
+            width: 300px;
+            height: 60px;
+            float: left;
+            marker-end: 50px;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            text-align: center;
+            align-content: center;
+            background: none;
+            color: #ffffff; 
+            text-align: left;
+            font-weight: 70;
+            font-size: 30px;
+            line-height: 60px;
+            margin: 80 20px;
+          
+                border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+          border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+          }  
+          input[type=counter] {
+            width: 60px;
+            height: 60px;
+            float: inline-start;
+            padding: 0;
+            margin: 0 18px;
+            
+            text-align: center;
+            align-content: center;
+            box-sizing: border-box;
+            background: #ecedef;
+            border: none;
+            font-size: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            font-weight: 700;
+            color: #f1eeee;
+            cursor: pointer;}
+
+            input[type=text] {
+              width: 313px;
+              height: 66px;
+              float: right;
+              marker-end: 50px;
+              padding: 0;
+              box-sizing: border-box;
+              border: none;
+              text-align: center;
+              align-content: center;
+              background: none;
+              color: #ffffff;
+              text-align: left;
+              font-weight: 70;
+              font-size: 30px;
+              line-height: 60px;
+              margin: 80 50px;
+            border-radius: 24px;
+              
+            }
+            .counter {
+              background: #e4852c !important;
+              color: #ffffff !important;
+            }
+
+          .enter_box{
+            background: #ffffff !important;
+            color: #000 !important;
+            width: 20px;
+            margin: 0 4rem;
+        }
+        .result_box{
+          background: #8ed6d4 !important;
+  color: #000 !important;
+        }
+          

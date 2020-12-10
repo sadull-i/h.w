@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insulin pump</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<body>
+    <div class="container">
+        <form name="form">
+      <div class="">
+    
+       
+        <input type="cal" class="enter_box" placeholder="Enter Sugar Level"  name="Sugarlevel" />
+        <input type="text" class="result_box" readonly="readonly" placeholder="Result here" name="displayResult" />
+    
+    
+    <input type="counter" class="counter"  placeholder="0" readonly="readonly" id ="counter1" />
+    <input type="counter" class="counter" placeholder="0" readonly="readonly" id="counter2" />
+    
+    
+        </div>
+        
+              <input type="button" class="red" value="Check" onClick="calcNumbers()">
+        </form>
+      </div>
+
+      <script>
+
+
+
+        var counter2 = document.getElementById("counter2");
+        var digit = 6;
+      
+        
+      
+         function calcNumbers(){
+        
+        var sugar = form.Sugarlevel.value;
+        form.displayResult.value="Getting result...";
+          if (form.Sugarlevel.value == 0)
+            { 
+               alert("empty");  	
+               
+            }	else{
+      
+         if(digit>0) {
+      
+              setTimeout(function(){ 
+                  
+            digit= digit-1;
+           document.getElementById("counter2").value = digit;
+      
+               calcNumbers();
+                   }, 1000);
+      
+             }else{
+             
+             digit = 6;
+      
+          if(sugar < 40){
+                        form.displayResult.value="Too Low sugar level";
+          }
+          if(sugar >= 40 && sugar <= 70){
+                        form.displayResult.value="LOW SUGAR LEVEL";
+          }
+          else if(sugar >= 80 && sugar <= 140){
+                        form.displayResult.value="NORMAL";
+          }
+          else if(sugar > 140){
+                        form.displayResult.value="High sugar level ";
+          }
+         
+             }
+      
+           }
+      
+        }
+      
+      
+        </script>
+</body>
+</html>
